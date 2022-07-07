@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="shortcut icon" href="imagenes/logo.png">
+	<title>REGISTRARSE</title>
+</head>
+<body>
+	<h1 class="texto">REGISTRARSE</h1>
+	<div class="formulario">
+		<form id="formulario" method="post" action="../PHP/alta.php">
+			<center>
+				<p>
+					<i class="fas fa-user"></i>
+					<label id="etiqueta_user">NOMBRE</label>
+					<input type="text" name="name" id="name" required="" pattern="[a-z A-Z]+">
+				</p>
+				<p>
+					<i class="fas fa-user"></i>
+					<label id="etiqueta_user">USUARIO</label>
+					<input type="text" name="user" id="user" required="" pattern="[a-z A-Z]+">
+				</p>
+				<p>
+					<i class="fas fa-envelope"></i>
+					<label id="etiqueta_email">CORREO ELECTRONICO</label>
+					<input type="text" name="email" id="email" required="">
+				</p>
+				<p>
+					<i class="fa-solid fa-mobile"></i>
+					<label id="etiqueta_contraseña">TELEFONO</label>
+					<input type="text" name="mobile" id="mobile" required="" pattern="[0-9]+" maxlength="10" minlength="10">
+				</p>
+				<p>
+					<i class="fas fa-lock"></i>
+					<label id="etiqueta_contraseña">CONTRASEÑA</label>
+					<input type="password" name="pass" id="pass" required="" maxlength="12" minlength="8">
+				</p>
+				<p>
+					<input type="submit" value="REGISTRARSE" class="button">
+					<p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+	                <p>¿Ya tienes una cuenta? <a class="link" href="login.html">Ingresar </a></p>
+				</p>
+			</center>
+		</form>
+	</div>
+</body>
+</html>
